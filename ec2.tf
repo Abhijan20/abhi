@@ -15,3 +15,7 @@ resource "aws_instance" "myec2" {
 variable "ami" {}
 variable "instance_type" {}
 variable "region" {}
+
+output "id" {
+value = aws_instance.myec2.id
+}
