@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 resource "aws_instance" "myec2" {
@@ -9,3 +9,4 @@ resource "aws_instance" "myec2" {
 
 variable "ami" {}
 variable "instance_type" {}
+variable "region" {}
